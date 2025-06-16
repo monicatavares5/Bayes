@@ -108,7 +108,7 @@ O executável estará na pasta dist/.
 ## 📂 Organização dos Arquivos do Projeto
 
 ```
-bayesinvest/
+bayes/
 │
 ├── README.md    
 ├──  index.html
