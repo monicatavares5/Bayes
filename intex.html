@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>BayesInvest - Previsão de Investimentos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            padding: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .result {
+            margin-top: 20px;
+            background: #dff0d8;
+            padding: 15px;
+            border-radius: 8px;
+            color: #3c763d;
+        }
+    </style>
+</head>
+<body>
+    <h1>BayesInvest</h1>
+    <p>Baseado no Teorema de Bayes</p>
+    <form method="POST">
+        <label>Tipo de Investimento:</label>
+        <select name="tipo">
+            <option>Ações</option>
+            <option>Criptomoedas</option>
+            <option>Renda Fixa</option>
+        </select>
+
+        <label>Perfil de Risco:</label>
+        <select name="risco">
+            <option>Baixo</option>
+            <option>Médio</option>
+            <option>Alto</option>
+        </select>
+
+        <label>Tempo de Investimento:</label>
+        <select name="tempo">
+            <option>Curto Prazo</option>
+            <option>Médio Prazo</option>
+            <option>Longo Prazo</option>
+        </select>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    {% if resultado %}
+        <div class="result">
+            <strong>Chance de Retorno:</strong> {{ resultado }}%
+        </div>
+    {% endif %}
+</body>
+</html>
