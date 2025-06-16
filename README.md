@@ -110,9 +110,10 @@ O executável estará na pasta dist/.
 ```
 bayesinvest/
 │
-├── bayesinvest_app.py      # Código principal (frontend + backend)
-├── README.md               # Documentação do projeto
-└── requirements.txt        # (opcional) Dependências para instalação automatizada
+├── README.md    
+├──  index.html
+├──  invest.py              
+└──  style.css      
 ```
 
 ## ✅ Conclusão
